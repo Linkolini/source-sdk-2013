@@ -68,7 +68,7 @@ public:
 		if ( !sv_cheats || sv_cheats->GetBool() )
 			return flBaseValue;
 
-		// If sv_cheats is off than it can only be 0.022 or -0.022 (if they've reversed the mouse in the options).		
+		// If sv_cheats is off then it can only be 0.022 or -0.022 (if they've reversed the mouse in the options).		
 		if ( flBaseValue > 0 )
 			return 0.022f;
 		else
